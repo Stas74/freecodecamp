@@ -171,3 +171,114 @@ Give the blue box a padding of 40px on its top and left side, but only 20px on i
   <h5 class="box blue-box">padding</h5>
 </div>
 
+
+<!-- 5 Add Different Margins to Each Side of an Element
+Sometimes you will want to customize an element so that it has a different margin on each of its sides.
+
+CSS allows you to control the margin of all four individual sides of an element with the margin-top, margin-right, margin-bottom, and margin-left properties.
+
+Give the blue box a margin of 40px on its top and left side, but only 20px on its bottom and right side. -->
+
+<style>
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+  }
+</style>
+
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box blue-box">padding</h5>
+</div>
+
+
+<!-- 6 Use Clockwise Notation to Specify the Padding of an Element
+Instead of specifying an element's padding-top, padding-right, padding-bottom, and padding-left properties individually, 
+you can specify them all in one line, like this:
+
+padding: 10px 20px 10px 20px;
+These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific padding instructions.
+
+Use Clockwise Notation to give the .blue-box class a padding of 40px on its top and left side, but only 20px on its bottom and right side. -->
+
+<style>
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    padding: 40px 20px 20px 40px;
+  }
+</style>
+
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box blue-box">padding</h5>
+</div>
+
+
+<!-- 7 Use Clockwise Notation to Specify the Margin of an Element
+Instead of specifying an element's margin-top, margin-right, margin-bottom, and margin-left properties individually, 
+you can specify them all in one line, like this:
+
+margin: 10px 20px 10px 20px;
+These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific margin instructions.
+
+Use Clockwise Notation to give the element with the blue-box class a margin of 40px on its top and left side, but only 20px on its bottom and right side. -->
+
+<style>
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    margin: 40px 20px 20px 40px;
+  }
+</style>
+
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box blue-box">padding</h5>
+</div>
+
+
+<!-- 8 Use Attribute Selectors to Style Elements
+You have been adding id or class attributes to elements that you wish to specifically style. 
+These are known as ID and class selectors. 
+There are other CSS Selectors you can use to select custom groups of elements to style.
+
+Let's bring out CatPhotoApp again to practice using CSS Selectors.
+
+For this challenge, you will use the [attr=value] attribute selector to style the checkboxes in CatPhotoApp. 
+This selector matches and styles elements with a specific attribute value.
+For example, the below code changes the margins of all elements with the attribute type and a corresponding value of radio:
+
+[type='radio'] {
+  margin: 20px 0px 20px 0px;
+}
+Using the type attribute selector, try to give the checkboxes in CatPhotoApp a top margin of 10px and a bottom margin of 15px. -->
+
+<style>
+  [type='checkbox'] {
+  margin: 10px 0px 15px 0px;
+}
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+<main>
+  <form action="https://freecatphotoapp.com/submit-cat-photo" id="cat-photo-form">
+    <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
+    <label><input type="checkbox" name="personality" checked> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Energetic</label><br>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</main>
