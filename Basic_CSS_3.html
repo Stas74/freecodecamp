@@ -142,5 +142,104 @@ Leave the blue-text and pink-text classes on your h1 element. -->
 <h1 style="color: white;" id="orange-text" class="pink-text blue-text">Hello World!</h1>
 
 
+<!-- 7 Override All Other Styles by using Important
+Yay! We just proved that inline styles will override all the CSS declarations in your style element.
+But wait. There's one last way to override CSS. This is the most powerful method of all. 
+But before we do it, let's talk about why you would ever want to override CSS.
+
+In many situations, you will use CSS libraries. 
+These may accidentally override your own CSS. 
+So when you absolutely need to be sure that an element has specific CSS, you can use !important.
+
+Let's go all the way back to our pink-text class declaration. 
+Remember that our pink-text class was overridden by subsequent class declarations, id declarations, and inline styles.
+
+Let's add the keyword !important to your pink-text element's color declaration to make 100% sure that your h1 element will be pink.
+An example of how to do this is:
+
+color: red !important; -->
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink !important;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello World!</h1>
 
 
+<!-- 8 Use Hex Code for Specific Colors
+One of these ways is called hexadecimal code, or hex code for short.
+In CSS, we can use 6 hexadecimal digits to represent colors, two each for the red (R), green (G), and blue (B) components. 
+For example, #000000 is black and is also the lowest possible value
+Replace the word black in our body element's background-color with its hex code representation, #000000. -->
+
+<style>
+  body {
+    background-color: #000000;
+  }
+</style>
+
+
+<!-- 9 Use Hex Code to Mix Colors
+To review, hex codes use 6 hexadecimal digits to represent colors, two each for red (R), green (G), and blue (B) components.
+From these three pure colors (red, green, and blue), we can vary the amounts of each to create over 16 million other colors!
+For example, orange is pure red, mixed with some green, and no blue. In hex code, this translates to being #FFA500.
+
+The digit 0 is the lowest number in hex code, and represents a complete absence of color.
+The digit F is the highest number in hex code, and represents the maximum possible brightness. -->
+
+<style>
+  .red-text {
+    color: #FF0000;
+  }
+  .green-text {
+    color: #00FF00;
+  }
+  .dodger-blue-text {
+    color: #1E90FF;
+  }
+  .orange-text {
+    color: #FFA500;
+  }
+</style>
+
+<h1 class="red-text">I am red!</h1>
+<h1 class="green-text">I am green!</h1>
+<h1 class="dodger-blue-text">I am dodger blue!</h1>
+<h1 class="orange-text">I am orange!</h1>
+
+
+<!-- 10 Use Abbreviated Hex Code
+Many people feel overwhelmed by the possibilities of more than 16 million colors. 
+And it's difficult to remember hex code. Fortunately, you can shorten it.
+
+For example, red's hex code #FF0000 can be shortened to #F00. 
+This shortened form gives one digit for red, one digit for green, and one digit for blue.
+This reduces the total number of possible colors to around 4,000. 
+But browsers will interpret #FF0000 and #F00 as exactly the same color. -->
+
+<style>
+  .red-text {
+    color: #F00;
+  }
+  .fuchsia-text {
+    color: #F0F;
+  }
+  .cyan-text {
+    color: #0FF;
+  }
+  .green-text {
+    color: #0F0;
+  }
+</style>
