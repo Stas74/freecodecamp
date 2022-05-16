@@ -147,4 +147,84 @@ Note: In HTML, hr is a self-closing tag, and therefore doesn't need a separate c
       <hr>
 
 
-9 
+<!-- 9 Adjust the background-color Property of Text
+Instead of adjusting your overall background or the color of the text to make the foreground easily readable, 
+you can add a background-color to the element holding the text you want to emphasize. 
+This challenge uses rgba() instead of hex codes or normal rgb().
+
+rgba stands for:
+  r = red
+  g = green
+  b = blue
+  a = alpha/level of opacity
+The RGB values can range from 0 to 255. 
+The alpha value can range from 1, which is fully opaque or a solid color, to 0, which is fully transparent or clear. 
+rgba() is great to use in this case, as it allows you to adjust the opacity. 
+This means you don't have to completely block out the background.
+
+You'll use background-color: rgba(45, 45, 45, 0.1) for this challenge. 
+It produces a dark gray color that is nearly transparent given the low opacity value of 0.1.
+
+To make the text stand out more, adjust the background-color of the h4 element to the given rgba() value.
+Also for the h4, remove the height property and add padding of 10px. -->
+
+<style>
+  h4 {
+    text-align: center;
+    padding:10px;
+    background-color: rgba(45, 45, 45, 0.1)
+
+  }
+</style>
+
+
+<!-- 10 Adjust the Size of a Heading Element Versus a Paragraph Element
+The font size of heading elements (h1 through h6) should generally be larger than the font size of paragraph tags. 
+This makes it easier for the user to visually understand the layout and level of importance of everything on the page. 
+You use the font-size property to adjust the size of the text in an element.
+
+To make the heading significantly larger than the paragraph, change the font-size of the h4 element to 27 pixels. -->
+
+h4 {
+    text-align: center;
+    background-color: rgba(45, 45, 45, 0.1);
+    padding: 10px;
+    font-size: 27px;
+
+  }
+
+
+<!-- 11 Add a box-shadow to a Card-like Element
+The box-shadow property applies one or more shadows to an element.
+
+The box-shadow property takes the following values, in order:
+
+offset-x (how far to push the shadow horizontally from the element)
+offset-y (how far to push the shadow vertically from the element)
+blur-radius
+spread-radius
+color
+The blur-radius and spread-radius values are optional.
+
+Multiple box-shadows can be created by using commas to separate properties of each box-shadow element.
+
+Here's an example of the CSS to create multiple shadows with some blur, at mostly-transparent black colors:
+
+box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+The element now has an id of thumbnail. With this selector, use the example CSS values above to place a box-shadow on the card. -->
+
+#thumbnail {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+
+
+<!-- 12 Decrease the Opacity of an Element
+The opacity property in CSS is used to adjust the opacity, or conversely, the transparency for an item.
+
+A value of 1 is opaque, which isn't transparent at all.
+A value of 0.5 is half see-through.
+A value of 0 is completely transparent.
+The value given will apply to the entire element, whether that's an image with some transparency, or the foreground and background colors for a block of text.
+
+Set the opacity of the anchor tags to 0.7 using links class to select them. -->
+
