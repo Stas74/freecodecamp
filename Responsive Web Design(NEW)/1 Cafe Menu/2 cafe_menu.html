@@ -179,3 +179,55 @@ To complete the styling, add the applicable class names flavor and price to all 
             <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
           </article>
 ..................
+
+
+<!-- Step 46
+If you make the width of the page preview smaller, you will notice at some point, some of the text on the left starts wrapping around to the next line. 
+This is because the width of the p elements on the left side can only take up 50% of the space.
+
+Since you know the prices on the right have significantly fewer characters, change the flavor class width value to be 75% and the price class width value to be 25%. -->
+
+.flavor {
+  text-align: left;
+  width: 75%;
+}
+.price {
+  text-align: right;
+  width: 25%;
+}
+
+
+<!-- Step 47
+You will come back to styling the menu in a few steps, 
+but for now, go ahead and add a second section element below the first for displaying the desserts offered by the cafe. -->
+
+        <section>
+        </section>
+
+
+<!-- Step 48
+Add an h2 element in the new section and give it the text Desserts. -->
+
+        <section>
+          <h2>Desserts</h2>
+        </section>
+
+
+<!-- Step 49
+Add an empty article element under the Desserts heading. Give it a class attribute with the value item. -->
+
+          <h2>Desserts</h2>
+          <article class="item">
+          </article>
+
+
+Step 50
+Nest two p elements inside your article element. 
+The first one's text should be Donut, and the second's text 1.50. Put both of them on the same line making sure there is no space between them.
+
+          <article class="item">
+            <p>Donut</p><p>1.50</p>
+          </article>
+
+
+
