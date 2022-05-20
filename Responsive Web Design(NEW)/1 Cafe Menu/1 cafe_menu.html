@@ -162,3 +162,49 @@ Once it is removed, the text that was centered will shift back to the left. -->
     <title>Cafe Menu</title>    
   </head>
 
+
+<!-- Step 17
+Now you need to link the styles.css file so the styles will be applied again. 
+Nest a self-closing link element in the head element. Give it a rel attribute value stylesheet, 
+a type attribute value of text/css, and an href attribute value of styles.css. -->
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="utf-8" />
+    <title>Cafe Menu</title>
+  </head>
+
+
+<!-- Step 18
+For the styling of the page to look similar on mobile as it does on a desktop or laptop, you need to add a meta element with a special content attribute.
+Add the following within the head element:
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+
+<!-- Step 19
+The text is centered again so the link to the CSS file is working. 
+Add another style to the file that changes the background-color property to brown for the body element. -->
+
+h1, h2, p {
+  text-align: center;
+}
+body {
+  background-color: brown;
+}
+
+
+<!-- Step 20
+That brown background makes it hard to read the text. 
+Change the body element's background color to be burlywood so it has some color but you are still be able to read the text. -->
+
+body {
+  background-color: burlywood ;
+}
