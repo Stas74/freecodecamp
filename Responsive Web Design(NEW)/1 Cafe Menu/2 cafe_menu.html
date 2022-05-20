@@ -185,7 +185,8 @@ To complete the styling, add the applicable class names flavor and price to all 
 If you make the width of the page preview smaller, you will notice at some point, some of the text on the left starts wrapping around to the next line. 
 This is because the width of the p elements on the left side can only take up 50% of the space.
 
-Since you know the prices on the right have significantly fewer characters, change the flavor class width value to be 75% and the price class width value to be 25%. -->
+Since you know the prices on the right have significantly fewer characters, 
+change the flavor class width value to be 75% and the price class width value to be 25%. -->
 
 .flavor {
   text-align: left;
@@ -221,13 +222,82 @@ Add an empty article element under the Desserts heading. Give it a class attribu
           </article>
 
 
-Step 50
+<!-- Step 50
 Nest two p elements inside your article element. 
-The first one's text should be Donut, and the second's text 1.50. Put both of them on the same line making sure there is no space between them.
+The first one's text should be Donut, and the second's text 1.50. Put both of them on the same line making sure there is no space between them. -->
 
           <article class="item">
             <p>Donut</p><p>1.50</p>
           </article>
 
+
+<!-- Step 51
+For the two p elements you just added, 
+add dessert as the value of the first p element's class attribute and the value price as the second p elements class attribute. -->
+
+            <p class="dessert">Donut</p><p class="price">1.50</p>
+
+
+<!-- Step 52
+Something does not look right. You added the correct class attribute value to the p element with Donut as its text, but you have not defined a selector for it.
+
+Since the flavor class selector already has the properties you want, just add the dessert class name to it. -->
+
+.flavor, .dessert {
+  text-align: left;
+  width: 75%;
+}
+
+
+<!-- Step 53
+Below the dessert you just added, add the rest of the desserts and prices using three more article elements, 
+each with two nested p elements. Each element should have the correct dessert and price text, and all of them should have the correct classes.
+
+Cherry Pie 2.75
+Cheesecake 3.00
+Cinnamon Roll 2.50 -->
+
+          <article class="item">
+            <p class="dessert">Donut</p><p class="price">1.50</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cheesecake</p><p class="price">3.00</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
+          </article>
+
+
+<!-- Step 54
+You can give your menu some space between the content and the sides with various padding properties.
+
+Give the menu class a padding-left and a padding-right with the same value 20px. -->
+
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+<!-- Step 55
+That looks better. Now try to add the same 20px padding to the top and bottom of the menu. -->
+
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 
