@@ -208,3 +208,61 @@ Change the body element's background color to be burlywood so it has some color 
 body {
   background-color: burlywood ;
 }
+
+
+<!-- Step 21
+The div element is used mainly for design layout purposes unlike the other content elements you have used so far. 
+Add a div element inside the body element and then move all the other elements inside the new div. -->
+
+
+  <body>
+    <div>
+     /////////
+    </div>
+  </body>
+
+
+<!-- Step 22
+The goal now is to make the div not take up the entire width of the page. 
+The CSS width property is perfect for this. Create a new type selector in the style sheet that gives your div element a width of 300px. -->
+
+body {
+  background-color: burlywood;
+}
+div {
+  width: 300px;
+}
+h1, h2, p {
+  text-align: center;
+}
+
+
+<!-- Step 23
+Comments in CSS look like this:
+
+/* comment here */
+In your style sheet, comment out the the line containing the background-color property and value, 
+so you can see the effect of only styling div element. This will make the background white again. -->
+
+  /* background-color: burlywood; */
+
+
+<!-- Step 24
+Now make the background color of the div element to be burlywood. -->
+
+div {
+  width: 300px;
+  background-color: burlywood;
+}
+
+
+<!-- Step 25
+Now it's easy to see that the text is centered inside the div element. 
+Currently, the width of the div element is specified in pixels (px). 
+Change the width property's value to be 80%, to make it 80% the width of its parent element (body). -->
+
+div {
+  width: 80%;
+  background-color: burlywood;
+}
+
