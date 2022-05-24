@@ -82,3 +82,57 @@ hr {
 }
 
 
+<!-- Step 71
+Notice how the thickness of the line looks bigger? 
+The default value of a property named border-width is 1px for all edges of hr elements. 
+By changing the border to the same color as the background, the total height of the line is 5px (3px plus the top and bottom border width of 1px).
+Change the height property of the hr to be 2px, so the total height of it becomes 4px. -->
+
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+
+
+<!-- Step 72
+Go ahead and add another hr element between the main element and the footer element. -->
+
+      </main>
+      <hr>
+..................      
+
+
+<!-- Step 73
+To create a little more room around the menu, add 20px of space on the inside of the body element by using the padding property. -->
+
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+
+<!-- Step 74
+Focusing on the menu items and prices, there is a fairly large gap between each line.
+
+Target all the p elements nested in elements with the class named item and set their top and bottom margin to be 5px. -->
+
+.item p {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+<!-- Step 75
+Using the same style selector in the previous step, make the font size of the items and prices larger by using a value of 18px. -->
+
+.item p {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+
