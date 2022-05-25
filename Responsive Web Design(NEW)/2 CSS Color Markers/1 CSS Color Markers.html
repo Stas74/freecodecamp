@@ -62,3 +62,56 @@ Within the body, nest an h1 element with the text CSS Color Markers. -->
   </body>
 
 
+<!-- Step 7
+In this project you'll work with an external CSS file to style the page. 
+We've already created a styles.css file for you. But before you can use it, you'll need to link it to the page.
+
+Nest a link element within the head. Give it a rel attribute set to stylesheet, a type attribute set to text/css, and an href attribute set to styles.css. -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colored Markers</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+
+
+<!-- Step 8
+Now that your external CSS file is set up, you can start styling the page.
+As a reminder, here's how to target a paragraph element and align it to the right:
+
+p {
+  text-align: right;
+}
+Create a new CSS rule that targets the h1 element, and set its text-align property to center. -->
+
+h1 {
+  text-align: center;
+}
+
+
+<!-- Step 9
+Now you'll add some elements that you'll eventually style into color markers.
+
+First, within the body, add a div element and set its class attribute to container. Make sure the div element is below the h1 element -->
+
+
+  <body>
+    <h1>CSS Color Markers</h1>
+    <div class="container"></div>
+  </body>
+
+
+<!-- Step 10
+Next, within the div, add another div element and give it a class of marker. -->
+
+  <body>
+    <h1>CSS Color Markers</h1>
+    <div class="container">
+      <div class="marker">
+      </div>
+    </div>
+  </body>
+
+
+
