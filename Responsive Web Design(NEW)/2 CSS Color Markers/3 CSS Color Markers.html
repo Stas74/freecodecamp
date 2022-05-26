@@ -328,3 +328,51 @@ In the .red CSS rule, update the values for the box-shadow property so offsetX i
 }
 
 
+<!-- Step 91
+Next, update the color value of the red marker's box-shadow property.
+
+Replace the named color with the rgba function. Use the values 83 for red, 14 for green, 14 for blue and 0.8 for the alpha channel. -->
+
+.red {
+  background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+  box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+}
+
+
+<!-- Step 92
+The shadows for your green and blue markers will have the same position, blur, and spread. The only difference will be the colors.
+
+In the .green and .blue CSS rules, update the values for the box-shadow properties so offsetX is 0,offsetY is 0, blurRadius is 20px, and spreadRadius is 0. 
+Leave the colors as green and blue for now. -->
+
+.green {
+  background: linear-gradient(#55680D, #71F53E, #116C31);
+  box-shadow: 0 0 20px 0 green;
+}
+
+.blue {
+  background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+  box-shadow: 0 0 20px 0 blue;
+}
+
+
+<!-- Step 93
+For the green marker's box-shadow property, replace the named color with a hex color code. 
+Use the values 3B for red, 7E for green, 20 for blue, and CC for the alpha channel. -->
+
+.green {
+  background: linear-gradient(#55680D, #71F53E, #116C31);
+  box-shadow: 0 0 20px 0 #3B7E20CC;
+}
+
+
+<!-- Step 94
+Finally, for the blue marker's box-shadow property, replace the named color with the hsla function. 
+Use the values 223 for hue, 59% for saturation, 31% for lightness, and 0.8 for the alpha channel.
+
+And with that, your set of colored markers is complete! Well done. -->
+
+.blue {
+  background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+  box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
+}
