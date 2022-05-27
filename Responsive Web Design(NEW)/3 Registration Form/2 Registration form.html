@@ -159,3 +159,39 @@ Give the textarea a placeholder of I like coding on the beach.... -->
 </label>
 
 
+<!-- Step 36
+With form submissions, it is useful, and good practice, to provide each submittable element with a name attribute. 
+This attribute is used to identify the element in the form submission.
+
+Go ahead, and give each submittable element a unique name attribute of your choosing. Except for the two radio inputs. -->
+
+      <fieldset>
+        <label>Enter Your First Name: <input type="text" name="first-name" required /></label>
+        <label>Enter Your Last Name: <input type="text" name="last-name" required /></label>
+        <label>Enter Your Email: <input type="email" name="email" required /></label>
+        <label>Create a New Password: <input type="password" name="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <fieldset>
+        <label><input type="radio" name="account-type" /> Personal Account</label>
+        <label><input type="radio" name="account-type" /> Business Account</label>
+        <label>
+          <input type="checkbox" name="checkbox" required /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+			  </label>
+      </fieldset>
+      <fieldset>
+        <label>Upload a profile picture: <input type="file" name="file" /></label>
+        <label>Input your age (years): <input type="number" name="age" min="13" max="120" />
+			  </label>
+        <label>How did you hear about us?
+          <select name="reffer">
+            <option value="">(select one)</option>
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label>Provide a bio:
+				  <textarea name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+			  </label>
+      </fieldset>
