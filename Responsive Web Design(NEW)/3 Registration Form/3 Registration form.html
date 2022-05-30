@@ -120,3 +120,50 @@ input, textarea {
 }
 
 
+<!-- Step 48
+Currently, if you type in the input or textarea elements, you will not be able to see the text. Also, their height is too small to be easy to use.
+
+Fix this, by setting the color to #ffffff, and setting their min-height to 2em. -->
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+  min-height: 2em;
+}
+
+
+<!-- Step 49
+You want the select element to remain with a white background, but now it is not getting the same min-height as the input and textarea elements.
+
+Move the min-height property and value so that all three element types have the same min-height value, and the select element still has a white background. -->
+
+input,
+textarea,
+select {
+	margin: 10px 0 0 0;
+	width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;  
+}
+
+
+<!-- Step 50
+To style the submit button, you can use an attribute selector, which selects an element based on the given attribute value. Here is an example:
+
+input[name="password"]
+The above selects input elements with a name attribute value of password.
+
+Now, use the attribute selector to style the submit button with a display of block, and a width of 60%. -->
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+}
+
+
