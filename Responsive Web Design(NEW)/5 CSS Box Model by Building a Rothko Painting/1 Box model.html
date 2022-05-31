@@ -53,3 +53,40 @@ Now that you understand the CSS box model, let's get started on the Rothko paint
 Remove the <img> element. -->
 
 
+<!-- Step 6
+Add a div element in the body.
+Set the class attribute equal to canvas. For example, <div class="my-div">.
+This will act as the canvas for your painting. -->
+
+    <div class="canvas"></div>
+
+
+<!-- Step 7
+Before you can start styling the div you added, you need to link your CSS to your HTML.
+Add a link element to link your styles.css file. Set the href to ./styles.css, and remember to set the rel attribute to stylesheet. -->
+
+<link rel="stylesheet" href="./styles.css">
+
+
+<!-- Step 8
+Time for CSS.
+Even though your <div> has no text, it's still treated as a box with content. Write a CSS rule that uses 
+the .canvas class selector and set its width to 500 pixels. Here's a CSS rule that sets the width of the class card to 300 pixels -->
+
+.canvas {
+  width: 500px;
+}
+
+
+<!-- Step 9
+Add the height property with the value 600px to your .canvas rule. -->
+
+height: 600px;
+
+
+<!-- Step 10
+Change the background-color of the canvas to #4d0f00. -->
+
+background-color: #4d0f00;
+
+
