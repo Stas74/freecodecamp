@@ -7,3 +7,89 @@ Begin with your standard HTML boilerplate. Add a DOCTYPE declaration, an html el
   <body></body>
 </html>
 
+
+<!-- Step 2
+Within your head element, add a meta tag with the name set to viewport and the content set to width=device-width, initial-scale=1.
+
+Also add a meta tag with the charset set to UTF-8. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+  </body>
+</html>
+
+
+<!-- Step 3
+Within your head element, add a title element with the text set to Photo Gallery, and a link element to add your styles.css file to the page. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link href="styles.css" />
+  </head>
+  <body>
+  </body>
+</html>
+
+
+<!-- Step 4
+Within the body element, create a div with the class set to header.
+Inside the .header element nest an h1 element with the text CSS FLEXBOX PHOTO GALLERY. -->
+
+  <body>
+    <div class="header">
+      <h1>CSS FLEXBOX PHOTO GALLERY</h1>
+    </div>
+  </body>
+
+
+<!-- Step 5
+Below your .header element, create a new div element with the id set to gallery.
+In that #gallery element, create ten img elements. -->
+
+  <body>
+    <div class="header">
+      <h1>CSS FLEXBOX PHOTO GALLERY</h1>
+    </div>
+    <div id="gallery">
+      <img>
+      <img>
+      <img>
+      <img>
+      <img>
+      <img>
+      <img>
+      <img>
+      <img>
+      <img>    
+    </div>
+  </body>
+
+
+<!-- Step 6
+Now you need to give each img element a src attribute. 
+You are going to use the format https://cdn.freecodecamp.org/curriculum/css-photo-gallery/#.jpg, replacing # with the img element order.
+So your first img element would use 1.jpg, your second would use 2.jpg, and so on. -->
+
+    <div id="gallery">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg" />
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg" />
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg" />
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg" />
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg" />
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg" />
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg" />
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg" />
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg" />
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/10.jpg" />
+    </div>
+
+
