@@ -106,3 +106,46 @@ The larger font size of the number 230 is causing it to overflow. Give the .calo
 }
 
 
+<!-- Step 36
+Typography is often more art than science. You may have to tweak things like alignment until it looks correct.
+Give your .calories-info span selector a margin-top set to -7px. This will shift your 230 text into place. -->
+
+.calories-info span {
+  font-size: 1.2em;
+  margin-top: -7px;
+}
+
+
+<!-- Step 37
+Below your .calories-info element, add a div with the class attribute set to divider md. -->
+
+      <div class="divider md"></div>
+
+
+<!-- Step 38
+Create an .md selector and give it a height property of 5px. -->
+
+.md {
+  height: 5px;
+}
+
+
+<!-- Step 39
+Create a new div element below your .md element. Give it a class attribute set to daily-value sm-text. 
+Within this new div, add a p element with the text % Daily Value *, and set the class attribute to right bold. -->
+
+<div class="daily-value sm-text">
+  <p class="right bold">% Daily Value *</p>
+</div>
+
+
+<!-- Step 40
+The float styling is causing the new p element to be outside of the label's border. 
+Use your existing .divider element as an example to add a new divider after the p element. -->
+
+      <div class="daily-value sm-text">
+        <p class="right bold">% Daily Value *</p>
+        <div class="divider lg"></div>
+      </div>
+
+
