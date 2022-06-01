@@ -46,3 +46,49 @@ Give the p element the class necessary to indent it and remove the dividing bord
 <div class="divider"></div>
 
 
+<!-- Step 56
+Create another p element after your last .divider, and give it the text Total Sugars 12g. 
+Assign that p element the class values necessary to indent it and remove the bottom border. Then create another .divider below your new p element. -->
+
+<p class="indent no-divider">Total Sugars 12g</p>
+<div class="divider"></div>
+
+
+<!-- Step 57
+The advantage to creating these dividers is that you can apply specific classes to style them individually. Add dbl-indent to the class for your last .divider. -->
+
+        <p class="indent no-divider">Total Sugars 12g</p>
+        <div class="divider dbl-indent"></div>
+
+
+<!-- Step 58
+Create a .dbl-indent selector and give it a left margin of 2em. -->
+
+.dbl-indent {
+  margin-left: 2em;
+}
+
+
+<!-- Step 59
+Below your .dbl-indent element, add a new p element with the text Includes 10g Added Sugars 20%. 
+Your new p element should also be double indented, and have no bottom border. Use a span to make the 20% bold and right aligned.
+
+Then create another divider after that p element. -->
+
+        <p class="indent no-divider">Total Sugars 12g</p>
+        <div class="divider dbl-indent"></div>
+        <p class="dbl-indent no-divider">Includes 10g Added Sugars <span class="right bold">20%</span></p>
+        <div class="divider dbl-indent"></div>
+
+
+<!-- Step 60
+After your last divider, create another p element with the text Protein 3g. 
+Use the necessary classes to remove the bottom border, and a span to make the Protein bold.
+Following this element, create a large divider. -->
+
+        <p class="dbl-indent no-divider">Includes 10g Added Sugars <span class="right bold">20%</span>
+        <div class="divider"></div>
+        <p class="indent no-divider"><span class="bold">Protein</span> 3g</p>
+        <div class="divider lg"></div>
+
+
