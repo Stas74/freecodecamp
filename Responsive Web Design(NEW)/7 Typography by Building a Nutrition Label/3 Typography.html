@@ -92,3 +92,56 @@ Following this element, create a large divider. -->
         <div class="divider lg"></div>
 
 
+<!-- Step 61
+Create another p element below your large divider. Give the p element the text Vitamin D 2mcg 10%. 
+Use a span to make the 10% align to the right, but do not make it bold. -->
+
+        <p>Vitamin D 2mcg <span class="right">10%</span></p>
+
+
+<!-- Step 62
+Create another p element, give it the text Calcium 260mg 20%. Align 20% to the right. 
+Below that, create a p element with the text Iron 8mg 45%, aligning the 45% to the right. -->
+
+        <p>Calcium 260mg <span class="right">20%</span></p>
+        <p>Iron 8mg <span class="right">45%</span></p>
+
+
+<!-- Step 63
+Create the final p element for your .daily-value section. Give it the text Potassium 235mg 6%. 
+Align the 6% text to the right, and remove the bottom border of the p element. -->
+
+        <p class="no-divider">Potassium 235mg <span class="right">6%</span></p>
+
+
+<!-- Step 64
+Add a medium divider after your .daily-value element. Below that new divider, create a p element with the class attribute set to note.
+Give the p element the following text:
+* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice. -->
+
+<div class="divider md"></div>
+<p class="note">* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 
+        2,000 calories a day is used for general nutrition advice.</p>
+
+
+<!-- Step 65
+Create a .note selector, and set the size of the font to 0.6rem. Also set the top and bottom margins to 5px, removing the left and right margins. -->
+
+.note {
+  font-size: 0.6rem;
+  margin: 5px 0;
+}
+
+
+<!-- Step 66
+Give the .note selector a left and right padding of 8px, removing the top and bottom padding. Also set the text-indent property to -8px.
+
+With these last changes, your nutrition label is complete! -->
+
+.note {
+  font-size: 0.6rem;
+  margin: 5px 0;
+  padding: 0 8px;
+  text-indent: -8px;
+}
+
