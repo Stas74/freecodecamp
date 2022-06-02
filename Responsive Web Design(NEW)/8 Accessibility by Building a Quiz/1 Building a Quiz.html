@@ -63,3 +63,63 @@ Give your page a title that is descriptive and concise. -->
   </head>
 
 
+<!-- Step 6
+Navigation is a core part of accessibility, and screen readers rely on you to provide the structure of your page. This is accomplished with semantic HTML elements.
+Add a header and a main element to your page.
+The header element will be used to introduce the page, as well as provide a navigation menu.
+The main element will contain the core content of your page. -->
+
+  <body>
+   <header></header>
+   <main></main> 
+  </body>
+
+
+<!-- Step 7
+Within the header, provide context about the page by nesting one img, h1, and nav element.
+The img should point to https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg, and have an id of logo.
+The h1 should contain the text HTML/CSS Quiz. -->
+
+    <header>
+      <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
+      <h1>HTML/CSS Quiz</h1>
+      <nav></nav>
+    </header>
+
+
+<!-- Step 8
+A useful property of an SVG (scalable vector graphics) is that it contains a path attribute 
+which allows the image to be scaled without affecting the resolution of the resultant image.
+Currently, the img is assuming it's default size, which is too large. 
+Correctly, scale the image using it's id as a selector, and setting the width to max(100px, 18vw). -->
+
+#logo {
+	width: max(100px, 18vw)
+}
+
+
+<!-- Step 9
+As described in the freeCodeCamp Style Guide, the logo should retain an aspect ratio of 35 / 4, and have padding around the text.
+First, change the background-color to #0a0a23 so you can see the logo. 
+Then, use the aspect-ratio property to set the desired aspect ratio to 35 / 4. Finally, add a padding of 0.4rem all around. -->
+
+#logo {
+  width: max(100px, 18vw);
+	background-color: #0a0a23;
+	aspect-ratio: 35/4;
+	padding: 0.4rem;
+}
+
+
+<!-- Step 10
+Make the header take up the full width of its parent container, set it's height to 50px, and set the background-color to #1b1b32. 
+Then, set the display to use Flexbox. -->
+
+header {
+	width: 100%;
+	height: 50px;
+	background-color: #1b1b32;
+	display: flex;
+}
+
+
