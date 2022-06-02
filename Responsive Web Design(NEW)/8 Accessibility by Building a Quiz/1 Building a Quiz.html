@@ -183,3 +183,85 @@ Give each of the section elements the region role. -->
       </form>
 
 
+<!-- Step 16
+Every region role requires a visible label, which should be referenced by the aria-labelledby attribute.
+To the section elements, give the following aria-labelledby attributes:
+student-info
+html-questions
+css-questions
+Then, within each section element, nest one h2 element with an id matching the corresponding aria-labelledby attribute. Give each h2 suitable text content. -->
+
+      <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+        <section role="region" aria-labelledby="student-info"><h2 id="student-info">student-info</h2></section>
+        <section role="region" aria-labelledby="html-questions"><h2 id="html-questions">html-questions</h2></section>
+        <section role="region" aria-labelledby="css-questions"><h2 id="css-questions">css-questions</h2></section>
+      </form>
+
+
+<!-- Step 17
+Typeface plays an important role in the accessibility of a page. Some fonts are easier to read than others, and this is especially true on low-resolution screens.
+Change the font for both the h1 and h2 elements to Verdana, and use another web-safe font in the sans-serif family as a fallback.
+Also, add a border-bottom of 4px solid #dfdfe2 to h2 elements to make the sections distinct. -->
+
+h1, h2 {
+	font-family: Verdana, "sans-serif";	
+}
+
+h2 {
+	border-bottom: 4px solid #dfdfe2;
+}
+
+
+<!-- Step 18
+To be able to navigate within the page, give each anchor element an href corresponding to the id of the h2 elements. -->
+
+        <ul>
+          <li><a href="#student-info">INFO</a></li>
+          <li><a href="#html-questions">HTML</a></li>
+          <li><a href="#css-questions">CSS</a></li>
+			  </ul>
+
+
+<!-- Step 19
+Filling out the content of the quiz, below #student-info, add three div elements with a class of info.
+Then, within each div nest one label element, and one input element. -->
+
+        <section role="region" aria-labelledby="student-info">
+          <h2 id="student-info">Student Info</h2>
+          <div class="info">
+            <label></label>
+            <input>
+          </div>
+          <div class="info">
+            <label></label>
+            <input>
+          </div>
+          <div class="info">
+            <label></label>
+            <input></div>     
+        </section>
+
+
+<!-- Step 20
+It is important to link each input to the corresponding label element. This provides assistive technology users with a visual reference to the input.
+This is done by giving the label a for attribute, which contains the id of the input.
+This section will take a student's name, email address, and date of birth. Give the label elements appropriate for attributes, as well as text content. 
+Then, link the input elements to the corresponding label elements. -->
+
+        <section role="region" aria-labelledby="student-info">
+          <h2 id="student-info">Student Info</h2>
+          <div class="info">
+            <label for="name">Name</label>
+            <input id="name" />
+          </div>
+          <div class="info">
+            <label for="email">Email</label>
+            <input id="email" />
+          </div>
+          <div class="info">
+            <label for="date">Date of birth</label>
+            <input id="date" />
+          </div>
+        </section>
+
+
