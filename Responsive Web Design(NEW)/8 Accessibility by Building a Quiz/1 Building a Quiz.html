@@ -123,3 +123,63 @@ header {
 }
 
 
+<!-- Step 11
+Change the h1 font color to #f1be32, and set the font size to min(5vw, 1.2em). -->
+
+h1 {
+	color: #f1be32;
+	font-size: min(5vw, 1.2em);
+}
+
+
+<!-- Step 12
+To enable navigation on the page, add an unordered list with the following three list items:
+INFO
+HTML
+CSS
+The list items text should be wrapped in anchor tags. -->
+
+      <nav>
+        <ul>
+          <li><a>INFO</a></li>
+          <li><a>HTML</a></li>
+          <li><a>CSS</a></li>
+        </ul>
+      </nav>
+
+
+<!-- Step 13
+Target unordered list elements within nav elements, and use Flexbox to evenly space the children. -->
+
+nav > ul {
+	justify-content: space-evenly;
+	display: flex;
+}
+
+
+<!-- Step 14
+As this is a quiz, you will need a form for users to submit answers. You can semantically separate the content within the form using section elements.
+Within the main element, create a form with three nested section elements. 
+Then, make the form submit to https://freecodecamp.org/practice-project/accessibility-quiz, using the correct method. -->
+
+    <main>
+      <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+        <section></section>
+        <section></section>
+        <section></section>
+      </form>
+    </main>
+
+
+<!-- Step 15
+To increase the page accessibility, the role attribute can be used to indicate the purpose behind an element on the page to assistive technologies. 
+The role attribute is a part of the Web Accessibility Initiative (WAI), and accepts preset values.
+Give each of the section elements the region role. -->
+
+      <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+        <section role="region"></section>
+        <section role="region"></section>
+        <section role="region"></section>
+      </form>
+
+
