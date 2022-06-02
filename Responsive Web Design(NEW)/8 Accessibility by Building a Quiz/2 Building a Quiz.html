@@ -1,6 +1,7 @@
 <!-- Step 26
 Within the second section element, add two div elements with a class of question-block.
-Then, within each div.question-block element, add one p element with text of incrementing numbers, starting at 1, and one fieldset element with a class of question. -->
+Then, within each div.question-block element, add one p element with text of incrementing numbers, 
+starting at 1, and one fieldset element with a class of question. -->
 
         <section role="region" aria-labelledby="html-questions">
           <h2 id="html-questions">HTML</h2>
@@ -13,5 +14,125 @@ Then, within each div.question-block element, add one p element with text of inc
             <fieldset class="question"></fieldset>
           </div>
         </section>
+
+
+<!-- Step 27
+Each fieldset will contain a true/false question.
+Within each fieldset, nest one legend element, and one ul element with two options. -->
+
+        <section role="region" aria-labelledby="html-questions">
+          <h2 id="html-questions">HTML</h2>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset class="question">
+              <legend></legend>
+              <ul>
+                <li></li>
+                <li></li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <p>2</p>
+            <fieldset class="question">
+              <legend></legend>
+              <ul>
+                <li></li>
+                <li></li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+
+
+<!-- Step 28
+Give each fieldset an adequate name attribute. Then, give both unordered lists a class of answers-list.
+Finally, use the legend to caption the content of the fieldset by placing a true/false question as the text content. -->
+
+        <section role="region" aria-labelledby="html-questions">
+          <h2 id="html-questions">HTML</h2>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset class="question" name="first">
+              <legend>First</legend>
+              <ul class="answers-list">
+                <li></li>
+                <li></li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <p>2</p>
+            <fieldset class="question" name="second">
+              <legend>Second</legend>
+              <ul class="answers-list">
+                <li></li>
+                <li></li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+
+
+<!-- Step 29
+To provide the functionality of the true/false questions, we need a set of inputs which do not allow both to be selected at the same time.
+Within each list element, nest one label element, and within each label element, nest one input element with the appropriate type. -->
+
+<!--               <ul class="answers-list">
+                <li><label><input type="radio" /></label></li>
+                <li><label><input type="radio" /></label></li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <p>2</p>
+            <fieldset class="question" name="html-question-two">
+              <legend>
+                A label element nesting an input element is required to have a
+                for attribute with the same value as the input's id
+              </legend>
+              <ul class="answers-list">
+                <li><label><input type="radio" /></label></li>
+                <li><label><input type="radio" /></label></li>
+              </ul> -->
+
+
+<!-- Step 30
+Although not required for label elements with a nested input, it is still best-practice to explicitly link a label with its corresponding input element.
+Link the label elements with their corresponding input elements. -->
+
+<!--               <ul class="answers-list">
+                <li>
+                  <label for="true">
+                    <input id="true" type="radio" />
+                  </label>
+                </li>
+                <li>
+                  <label for="false">
+                    <input id="false" type="radio" />
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <p>2</p>
+            <fieldset class="question" name="html-question-two">
+              <legend>
+                A label element nesting an input element is required to have a
+                for attribute with the same value as the input's id
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="true">
+                    <input id="true" type="radio" />
+                  </label>
+                </li>
+                <li>
+                  <label for="false">
+                    <input id="false" type="radio" />
+                  </label>
+                </li>
+              </ul> -->
 
 
