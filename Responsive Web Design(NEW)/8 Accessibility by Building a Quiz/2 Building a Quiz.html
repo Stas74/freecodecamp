@@ -222,3 +222,46 @@ Group the relevant inputs together such that only one input from a pair can be s
               </ul> -->
 
 
+<!-- Step 33
+To prevent unnecessary repetition, target the before pseudo-element of the p element, and give it a content property of Question #. -->
+
+p::before {
+	content: "Question #";
+} 
+
+
+<!-- Step 34
+The final section of this quiz will contain a dropdown, and a text box.
+Begin by nesting a div with a class of formrow, and nest four div elements inside of it, alternating their class attributes with question-block and answer. -->
+
+        <section role="region" aria-labelledby="css-questions">
+          <h2 id="css-questions">CSS</h2>
+          <div class="formrow">
+            <div class="question-block"></div>
+            <div class="answer"></div>
+            <div class="question-block"></div>
+            <div class="answer"></div>
+          </div>
+        </section>
+
+
+<!-- Step 35
+Within the div.question-block elements, nest one label element, and give the label elements text content -->
+
+        <section role="region" aria-labelledby="css-questions">
+          <h2 id="css-questions">CSS</h2>
+          <div class="formrow">
+            <div class="question-block">
+              <label>q1</label>
+            </div>
+            <div class="answer">
+            </div>
+            <div class="question-block">
+              <label>q2</label>
+            </div>
+            <div class="answer">
+            </div>
+          </div>
+        </section>
+
+
