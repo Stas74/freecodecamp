@@ -8,3 +8,52 @@ Also, align the text to the right. -->
 }
 
 
+<!-- Step 57
+To neaten the .question-block elements, set the following CSS properties:
+
+text-align: left;
+display: block;
+width: 100%;
+margin-top: 20px;
+padding-top: 5px; -->
+
+.question-block {
+  text-align: left;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 5px;
+}
+
+
+<!-- Step 58
+Make the paragraph elements appear as a higher priority, with the following CSS properties:
+
+margin-top: 5px;
+padding-left: 15px;
+font-size: 20px; -->
+
+p {
+  margin-top: 5px;
+  padding-left: 15px;
+  font-size: 20px;
+}
+
+
+<!-- Step 59
+It is useful to see the default border around the fieldset elements, during development. However, it might not be the style you want.
+Remove the border and bottom padding on the .question elements. -->
+
+.question {
+  border: none;
+  padding-bottom: 0;
+}
+
+
+<!-- Step 60
+Remove the default styling for the list items of .answers-list, and remove the unordered list padding. -->
+
+.answers-list {
+  list-style: none;
+  padding: 0;
+}
