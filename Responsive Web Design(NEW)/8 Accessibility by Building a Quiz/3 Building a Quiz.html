@@ -16,3 +16,74 @@ Do not forget to give your form a submit button. -->
 <button type="submit">Submit</button>
 
 
+<!-- Step 41
+Two final semantic HTML elements for this project are the footer and address elements. 
+The footer element is a container for a collection of content that is related to the page, 
+and the address element is a container for contact information for the author of the page.
+After the main element, add one footer element, and nest one address element within it. -->
+
+<footer>
+  <address></address>
+</footer>
+
+
+<!-- Step 42
+Within the address element, add the following:
+
+freeCodeCamp<br />
+San Francisco<br />
+California<br />
+USA
+You can visit, but you might not find anything... -->
+
+    <footer>
+      <address>
+        freeCodeCamp<br />
+        San Francisco<br />
+        California<br />
+        USA
+      </address>
+    </footer>
+
+
+<!-- Step 43
+The address element does not have to contain a physical geographical location. It can be used to provide a link to the subject.
+Wrap a link around the text freeCodeCamp, and set its location to https://freecodecamp.org. -->
+
+    <footer>
+      <address>
+        <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+        San Francisco<br />
+        California<br />
+        USA
+      </address>
+    </footer>
+
+
+<!-- Step 44
+Back to styling the page. Select the list elements within the navigation bar, and give them the following styles:
+
+color: #dfdfe2;
+margin: 0 0.2rem;
+padding: 0.2rem;
+display: block; -->
+
+nav li {
+/* nav > ul > li */
+	color: #dfdfe2;
+	margin: 0 0.2rem;
+	padding: 0.2rem;
+	display: block;
+}
+
+
+<!-- Step 45
+On the topic of visual accessibility, contrast between elements is a key factor. 
+For example, the contrast between the text and the background of a heading should be at least 4.5:1.
+Change the font color of all the anchor elements within the list elements to something with a contrast ratio of at least 7:1. -->
+
+li > a {
+	color: #dfdfe2; 
+}
+
+
