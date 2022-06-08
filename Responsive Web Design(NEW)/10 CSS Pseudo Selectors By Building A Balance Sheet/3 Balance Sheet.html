@@ -26,3 +26,76 @@ span[class~="sr-only"] {
 }
 
 
+<!-- Step 31
+The CSS clip property is used to define the visible portions of an element. Set the span[class~="sr-only"] selector to have a clip property of rect(1px, 1px, 1px, 1px).
+The clip-path property determines the shape the clip property should take. 
+Use both the clip-path and -webkit-clip-path selectors to set the value to inset(50%), forming the clip-path into a rectangle within the element. -->
+
+span[class~="sr-only"] {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+}
+
+
+<!-- Step 32
+Now you need to size these elements down. Give your span[class~="sr-only"] selector a width and height property set to 1px. -->
+
+span[class~="sr-only"] {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+}
+
+
+<!-- Step 33
+To prevent the text content from overflowing, give your span[class~="sr-only"] selector an overflow property 
+set to hidden and a white-space property set to nowrap. -->
+
+span[class~="sr-only"] {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+<!-- Step 34
+Finally, you need to take these hidden elements out of the document flow. Give the span[class~="sr-only"] selector a position property set to absolute, 
+a padding property set to 0, and a margin property set to -1px. 
+This will ensure that not only are they no longer visible, but they are not even within the page view. -->
+
+span[class~="sr-only"] {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  padding: 0;
+  margin: -1px;
+}
+
+
+<!-- Step 35
+Time to style your table heading. Create an h1 selector. Give it a max-width property set to 37.25rem, a margin property set to 0 auto, 
+and a padding property set to 1.5rem 1.25rem. -->
+
+h1 {
+  max-width: 37.25rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem;
+}
+
+
