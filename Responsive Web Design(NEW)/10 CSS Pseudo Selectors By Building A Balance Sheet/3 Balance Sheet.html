@@ -223,3 +223,62 @@ span:not(.sr-only) {
 }
 
 
+<!-- Step 46
+Rather than having to constantly double-check you are not overwriting your earlier properties, you can use the !important keyword 
+to ensure these properties are always applied, regardless of order or specificity.
+Give each property in your span[class~="sr-only"] selector an !important keyword. Do not change any of the values. -->
+
+span[class~="sr-only"] {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  clip-path: inset(50%) !important;
+  -webkit-clip-path: inset(50%) !important;
+  height: 1px !important;
+  width: 1px !important;
+  position: absolute !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  padding: 0 !important;
+  margin: -1px !important;
+}
+
+
+<!-- Step 47
+Now that you have added the !important keyword, you can remove the :not(.sr-only) from your span selector. -->
+
+span {
+  font-weight: normal;
+}
+
+
+<!-- Step 48
+Create a table selector to target your tables. Set the border-collapse property to collapse, which will allow cell borders to collapse into a single border, 
+instead of a border around each cell. Also set the border property to 0 to hide the borders themselves. -->
+
+table {
+  border-collapse: collapse;
+  border: 0;
+}
+
+
+<!-- Step 49
+Ensure your table fills its container with a width property set to 100%, then position it relatively and give it a top margin of 3rem. -->
+
+table {
+  border-collapse: collapse;
+  border: 0;
+  width: 100%;
+  position: relative;
+  margin-top: 3rem;
+}
+
+
+<!-- Step 50
+Next you need to style your caption elements to look more like headers. 
+Create a table caption selector. Set the text to have a color of #356eaf, a size of 1.3em, and a normal weight. -->
+
+table caption {
+  color: #356eaf;
+  font-size: 1.3em;
+  font-weight: normal;
+}
