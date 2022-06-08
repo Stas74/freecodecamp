@@ -60,3 +60,50 @@ tr[class="total"] th {
   text-align: left;
   padding: 0.5rem 0 0.25rem 0.5rem;
 }
+
+
+<!-- Step 56
+The key difference between tr[class="total"] and tr.total is that the first will select tr elements where the only class is total. 
+The second will select tr elements where the class includes total.
+In your case, tr.total will work. You can use this selector to target all td elements within your .total rows. 
+Align the text to the right, and give them a padding of 0 0.25rem. -->
+
+tr.total td {
+  text-align: right;
+  padding: 0 0.25rem;
+}
+
+
+<!-- Step 57
+The :nth-of-type() pseudo-selector is used to target specific elements based on their order among siblings of the same type. 
+Use this pseudo-selector to target the third td element within your total table rows. Give it a right padding of 0.5rem. -->
+
+tr.total td:nth-of-type(3) {
+  padding-right: 0.5rem;
+}
+
+
+<!-- Step 58
+Give your tr.total elements a hover effect that changes the background to #99c9ff. -->
+
+tr.total:hover {
+  background-color: #99c9ff;
+}
+
+
+<!-- Step 59
+Select your td elements with the class value of current, and make the font italic. -->
+
+td.current {
+  font-style: italic;
+}
+
+
+<!-- Step 60
+Select the tr elements with the class set to data. Give them a background image of linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem). -->
+
+tr[class="data"] {
+  background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
+}
+
+
