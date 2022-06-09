@@ -34,3 +34,56 @@ Within your new black-character element, add three div elements with the followi
 <div id="black-hat"></div>
 <div id="gray-mask"></div>
 <div id="white-paper"></div>
+
+
+<!-- Step 36
+The mask needs eyes. Within your gray-mask element, add two div elements. 
+The first should have the class set to eyes left, and the second should have the class set to eyes right. -->
+
+<div class="eyes left"></div>
+<div class="eyes right"></div>
+
+
+<!-- Step 37
+Time to use some FontAwesome icons.
+
+The i element is used for idiomatic text, or text that is separate from the "normal" text content. 
+This could be for italic text, such as scientific terms, or for icons like those provided by FontAwesome.
+
+Within your white-paper element, add four i elements. Give them all a class value of fas fa-music.
+
+This special class is how FontAwesome determines which icon to load. fas indicates the category of icons (FontAwesome Solid, here),
+while fa-music selects the specific icon. -->
+
+<i class="fas fa-music"></i>
+<i class="fas fa-music"></i>
+<i class="fas fa-music"></i>
+<i class="fas fa-music"></i>
+
+
+<!-- Step 38
+Use an id selector to create a rule for your black-character element. Set the width to 300px, the height to 500px, and the background-color to rgb(45, 31, 19). -->
+
+#black-character {
+  width: 300px;
+  height: 500px;
+  background-color: rgb(45, 31, 19);
+}
+
+
+<!-- Step 39
+Move the black-character element into place by setting the position to absolute, the top to 30%, and the left to 59%. -->
+
+  position: absolute;
+  top: 30%;
+  left: 59%;
+
+
+<!-- Step 40
+Use an id selector to create a rule for your black-hat element. Give it a width of 0, a height of 0, and a border-style of solid. -->
+
+#black-hat {
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
