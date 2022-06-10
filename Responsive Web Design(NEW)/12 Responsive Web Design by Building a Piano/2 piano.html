@@ -11,3 +11,33 @@ Setting the content property to an empty string "" will ensure the element is re
 If you would like to experiment, try removing the background-color property and setting different values for the content property, such as "♥". 
 Remember to undo these changes when you are done so the tests pass. -->
 
+.key.black--key::after {
+  background-color: #1d1e22;
+  content: "";
+}
+
+
+<!-- Step 19
+Give the .key.black--key::after a position property set to absolute and a left property set to -18px. -->
+
+.key.black--key::after {
+  background-color: #1d1e22;
+  content: "";
+  position: absolute;
+  left: -18px;
+}
+
+
+<!-- Step 20
+For the .key.black--key::after, set the width to 32px and the height to 100px. -->
+
+.key.black--key::after {
+  background-color: #1d1e22;
+  content: "";
+  position: absolute;
+  left: -18px;
+  width: 32px;
+  height: 100px;
+}
+
+
