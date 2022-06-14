@@ -77,3 +77,87 @@ In .bb1a, add a gradient of type linear-gradient to the background property with
 }
 
 
+<!-- Step 41
+You want to add the same gradient to the next two sections. Instead of doing that, create a new class selector called bb1-window, 
+and move the height and background properties and values from .bb1a to the new class selector. -->
+
+.bb1-window {
+  height: 10%;
+  background: linear-gradient(
+      var(--building-color1),
+      var(--window-color1)
+    );
+}
+
+.bb1a {
+  width: 70%;  
+  background-color: var(--building-color1);  
+}
+
+
+<!-- Step 42
+Add the new bb1-window class to the .bb1a, .bb1b, and .bb1c elements. This will apply the gradient to them. -->
+
+      <div class="bb1">
+        <div class="bb1a bb1-window"></div>
+        <div class="bb1b bb1-window"></div>
+        <div class="bb1c bb1-window"></div>
+        <div class="bb1d"></div>
+      </div>
+
+
+<!-- Step 43
+You don't need the height or background-color properties in .bb1a, .bb1b or .bb1c anymore, so go ahead and remove them. -->
+
+.bb1a {
+  width: 70%;  
+}
+
+.bb1b {
+  width: 80%;    
+}
+
+.bb1c {
+  width: 90%;
+}
+
+
+<!-- Step 44
+Gradients can use as many colors as you want like this:
+
+gradient-type(
+  color1,
+  color2,
+  color3
+);
+Add a linear-gradient to .bb1d with orange as the first color, --building-color1 as the second, and --window-color1 as the third. 
+Remember to use the gradient on the background property. -->
+
+
+.bb1d {
+  width: 100%;
+  height: 70%;
+  background-color: var(--building-color1);
+  background: linear-gradient(
+    orange, 
+    var(--building-color1),
+    var(--window-color1)
+    )
+}
+
+
+<!-- Step 45
+It's a little hidden behind the foreground buildings, but you can see the three color gradient there. 
+Since you are using that now, remove the background-color property from .bb1d. -->
+
+.bb1d {
+  width: 100%;
+  height: 70%;  
+  background: linear-gradient(
+      orange,
+      var(--building-color1),
+      var(--window-color1)
+    );
+}
+
+
