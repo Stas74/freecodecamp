@@ -2,3 +2,78 @@
 Squeeze the buildings together again by adding two empty div elements within both the top and bottom of the .foreground-buildings element, 
 and one more in between .fb2 and .fb3. -->
 
+    <div class="foreground-buildings">
+      <div></div>
+      <div></div>
+      <div class="fb1"></div>
+      <div class="fb2"></div>
+      <div></div>
+      <div class="fb3"></div>
+      <div class="fb4"></div>
+      <div class="fb5"></div>
+      <div class="fb6"></div>
+      <div></div>
+      <div></div>
+    </div>
+
+
+<!-- Step 37
+Move the position of .fb4 relative to where it is now by adding a position of relative and left of 10% to it. Do the same for .fb5 but use right instead of left. 
+This will cover up the remaining white space in between the buildings. -->
+
+.fb4 {
+  width: 8%;
+  height: 45%;
+  background-color: var(--building-color1);
+  position: relative;
+  left: 10%;
+}
+
+.fb5 {
+  width: 10%;
+  height: 33%;
+  background-color: var(--building-color2);
+  position: relative;
+  right: 10%;
+}
+
+
+<!-- Step 38
+Your code is starting to get quite long. Add a comment above the .fb1 class that says FOREGROUND BUILDINGS - "fb" stands for "foreground building" 
+to help people understand your code. Above the .bb1 class add another comment that says BACKGROUND BUILDINGS - "bb" stands for "background building". 
+If you don't remember, comments in CSS look like this: /* Comment here */. -->
+
+/* BACKGROUND BUILDINGS - "bb" stands for "background building" */
+
+/* FOREGROUND BUILDINGS - "fb" stands for "foreground building" */
+
+
+<!-- Step 39
+Create a new variable in :root called --window-color1 and give it a value of black. This will be a secondary color for the purple buildings. -->
+
+:root {
+  --building-color1: #aa80ff;
+  --building-color2: #66cc99;
+  --building-color3: #cc6699;
+  --building-color4: #538cc6;
+  --window-color1: black;
+}
+
+
+<!-- Step 40
+Gradients in CSS are a way to transition between colors across the distance of an element. They are applied to the background property and the syntax looks like this:
+
+gradient-type(
+  color1,
+  color2
+);
+In the example, color1 is solid at the top, color2 is solid at the bottom, and in between it transitions evenly from one to the next. 
+In .bb1a, add a gradient of type linear-gradient to the background property with --building-color1 as the first color and --window-color1 as the second. -->
+
+.bb1a {
+  width: 70%;
+  height: 10%;
+  background: linear-gradient(var(--building-color1), var(--window-color1));
+}
+
+
