@@ -13,3 +13,68 @@ Add a <meta> tag with the appropriate charset and a <meta> tag for mobile respon
 </html>
 
 
+<!-- Step 2
+Add a title element with the text Magazine, a link element for the https://fonts.googleapis.com/css?family=Anton|Baskervville|Raleway&display=swap font stylesheet, 
+a link for the https://use.fontawesome.com/releases/v5.8.2/css/all.css FontAwesome stylesheet, and a link for your ./styles.css stylesheet.
+
+Your font stylesheet will load three separate fonts: Anton, Baskervville, and Raleway. -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magazine</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton|Baskervville|Raleway&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+
+
+<!-- Step 3
+Within your body, create a main element. Then in that element, create a section with a class set to heading. -->
+
+<main>
+  <section class="heading"></section>
+</main>
+
+
+<!-- Step 4
+Within your .heading element, create a header element with the class set to hero.
+
+In that element, create an img element with the src set to https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png, 
+the alt set to freecodecamp logo, and the class set to hero-img.
+
+The loading attribute on an img element can be set to lazy to tell the browser not to fetch the image resource until it is needed 
+(as in, when the user scrolls the image into view). As an additional benefit, lazy loaded elements will not load until the non-lazy elements are loaded - 
+this means users with slow internet connections can view the content of your page without having to wait for the images to load.
+
+Give your new img element a loading attribute set to lazy. -->
+
+    <main>
+      <section class="heading">
+        <header class="hero">
+          <img src="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png" alt="freecodecamp logo" class="hero-img" loading="lazy">
+        </header>
+      </section>
+    </main>
+
+
+<!-- Step 5
+After your img element, add an h1 element with the class set to hero-title and the text set to OUR NEW CURRICULUM, 
+followed by a p element with the class set to hero-subtitle and the text set to Our efforts to restructure our curriculum with a more project-based focus. -->
+
+    <main>
+      <section class="heading">
+        <header class="hero">
+          <img
+            src="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png"
+            alt="freecodecamp logo"
+            loading="lazy"
+            class="hero-img"
+          />
+          <h1 class="hero-title">OUR NEW CURRICULUM</h1>
+          <p class="hero-subtitle">Our efforts to restructure our curriculum with a more project-based focus</p>
+        </header>
+      </section>
+    </main>
+
+
