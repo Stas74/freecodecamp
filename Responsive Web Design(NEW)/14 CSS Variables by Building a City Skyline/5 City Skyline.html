@@ -50,3 +50,81 @@ Give the .fb2-window elements a width of 22%, height of 100%, and a background-c
 }
 
 
+<!-- Step 86
+Move the background-color property and value from .fb2 to .fb2b to just color the section and not the container. -->
+
+.fb2 {
+  width: 10%;
+  height: 40%;  
+}
+
+.fb2a {
+  width: 100%;
+}
+
+.fb2b {
+  width: 100%;
+  height: 75%;
+  background-color: var(--building-color3);
+}
+
+
+<!-- Step 87
+For .fb2a, add a border-bottom of 10vh solid var(--building-color3), and a border-left and border-right of 1vw solid transparent. 
+This time the border trick will create a trapezoid shape. -->
+
+.fb2a {
+  width: 100%;
+  border-bottom: 10vh solid var(--building-color3);
+  border-left: 1vw solid transparent;
+  border-right: 1vw solid transparent;
+}
+
+
+<!-- Step 88
+For the next building, nest four div elements within .fb3 with classes of fb3a, fb3b, fb3a again, and fb3b again, in that order. 
+This building will have four sections, and the top two will be almost the same as the bottom two. -->
+
+      <div class="fb3">
+        <div class="fb3a"></div>
+        <div class="fb3b"></div>
+        <div class="fb3a"></div>
+        <div class="fb3b"></div>
+      </div>
+
+
+<!-- Step 89
+Give the .fb3a element a width of 80% and height of 15%. Then give the .fb3b element a width of 100% and height of 35%. -->
+
+.fb3a {
+  width: 80%;
+  height: 15%;
+}
+
+.fb3b {
+  width: 100%;
+  height: 35%;
+}
+
+
+<!-- Step 90
+Remove the background-color property and value from .fb3, and add them to .fb3a and .fb3b. -->
+
+.fb3 {
+  width: 10%;
+  height: 35%;  
+}
+
+.fb3a {
+  width: 80%;
+  height: 15%;
+  background-color: var(--building-color1);
+}
+  
+.fb3b {
+  width: 100%;
+  height: 35%;
+  background-color: var(--building-color1);
+}
+
+
