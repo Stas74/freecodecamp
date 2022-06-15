@@ -38,3 +38,81 @@ In this case, the first two colors will default to 0% and 7.5% because it starts
 }
 
 
+<!-- Step 61
+Remove the background-color property and value from .bb3 since you are using the gradient as the background now. -->
+
+.bb3 {
+  width: 10%;
+  height: 55%;
+  background: repeating-linear-gradient(
+      90deg,
+      var(--building-color3),
+      var(--building-color3),
+      var(--window-color3) 15%
+    );
+}
+
+
+<!-- Step 62
+The next building will have three sections. Nest three div elements within .bb4. Give them the classes of bb4a, bb4b and bb4c in that order. -->
+
+      <div class="bb4">
+        <div class="bb4a"></div>
+        <div class="bb4b"></div>
+        <div class="bb4c"></div>
+      </div>
+
+
+<!-- Step 63
+Give the new div elements these width and height values: 3% and 10% to .bb4a, 80% and 5% to .bb4b, and 100% and 85% to .bb4c. -->
+
+.bb4a {
+  width: 3%;
+  height: 10%;
+}
+
+.bb4b {
+  width: 80%;
+  height: 5%;
+}
+
+.bb4c {
+  width: 100%;
+  height: 85%;
+}
+
+
+<!-- Step 64
+Remove the background-color property and value from .bb4, and add it to the three new sections .bb4a, .bb4b, and .bb4c, so only the sections are filled. -->
+
+.bb4 {
+  width: 11%;
+  height: 58%;  
+}
+
+.bb4a {
+  width: 3%;
+  height: 10%;
+  background-color: var(--building-color4);
+}
+
+.bb4b {
+  width: 80%;
+  height: 5%;
+  background-color: var(--building-color4);
+}
+  
+.bb4c {
+  width: 100%;
+  height: 85%;
+  background-color: var(--building-color4);
+}
+
+
+<!-- Step 65
+You want .bb4 to share the properties of .bb1 that center the sections. Instead of duplicating that code, create a new class above the background building 
+comment called building-wrap. Leave it empty for now; this class will be used in a few places to save you some coding. -->
+
+.building-wrap {}
+
+
