@@ -42,3 +42,99 @@ This will make a bunch of rectangle windows. -->
 }
 
 
+<!-- Step 106
+You don't need the background-color for this building anymore so you can remove that property. -->
+
+.fb5 {
+  width: 10%;
+  height: 33%;
+  position: relative;
+  right: 10%;
+  background: repeating-linear-gradient(
+      var(--building-color2),
+      var(--building-color2) 5%,
+      transparent 5%,
+      transparent 10%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      var(--building-color2),
+      var(--building-color2) 12%,
+      var(--window-color2) 12%,
+      var(--window-color2) 44%
+    );
+}
+
+
+<!-- Step 107
+Finally! You made it to the last building! 
+Add a repeating gradient to it with a 90deg direction. Use the building color from 0% to 10% and transparent from 10% to 30%. -->
+
+.fb6 {
+  width: 9%;
+  height: 38%;
+  background-color: var(--building-color3);
+  background: repeating-linear-gradient(
+    90deg,
+    var(--building-color3),
+    var(--building-color3) 10%,
+    transparent 10%,
+    transparent 30%
+    );
+}
+
+
+<!-- Step 108
+Add another repeating gradient to this building; make it the same as the one you just added, except 
+don't add the 90deg direction and use your window color instead of the two transparent colors. -->
+
+.fb6 {
+  width: 9%;
+  height: 38%;
+  background-color: var(--building-color3);
+  background: repeating-linear-gradient(
+    90deg,
+    var(--building-color3),
+    var(--building-color3) 10%,
+    transparent 10%,
+    transparent 30%
+  ), 
+  repeating-linear-gradient(
+    var(--building-color3),
+    var(--building-color3) 10%,
+    var(--window-color3) 10%,
+    var(--window-color3) 30%
+  )
+}
+
+
+<!-- Step 109
+You can remove the background-color for this building now, since it isn't needed. -->
+
+.fb6 {
+  width: 9%;
+  height: 38%;
+  background: repeating-linear-gradient(
+      90deg,
+      var(--building-color3),
+      var(--building-color3) 10%,
+      transparent 10%,
+      transparent 30%
+    ),
+    repeating-linear-gradient(
+      var(--building-color3),
+      var(--building-color3) 10%,
+      var(--window-color3) 10%,
+      var(--window-color3) 30%
+    );
+}
+
+
+<!-- Step 110
+Okay, the buildings are done. Go back to the * selector and remove the border you applied to everything at the beginning and the buildings will come together. -->
+
+* {
+  box-sizing: border-box;
+}
+
+
