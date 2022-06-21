@@ -118,3 +118,72 @@ Then, set the background to a linear gradient at 45deg starting at gray, and end
 }
 
 
+<!-- Step 31
+Most penguins do not have a square head.
+Give the penguin a slightly oval head by setting the radius of the top corners to 70% and the radius of the bottom corners to 65%. -->
+
+.penguin-head {
+  width: 50%;
+	height: 45%;
+  background: linear-gradient(
+		45deg,
+		gray,
+		rgb(239, 240, 228)
+	);
+	border-radius: 70% 70% 65% 65%;
+}
+
+
+<!-- Step 32
+Target the .penguin-body element, and give it a width of 53%, and a height of 45%. 
+Then, set the background to a linear gradient at 45deg, rgb(134, 133, 133) from 0%, rgb(234, 231, 231) from 25%, and white from 67%. -->
+
+.penguin-body {
+  width: 53%;
+	height: 45%;
+  background: linear-gradient(
+    45deg, rgb(134, 133, 133) 0%, rgb(234, 231, 231) 25%, white 67%
+	);
+}
+
+
+<!-- Step 33
+Another interesting fact about penguins is that they do not have square bodies.
+Use the border-radius property with a value of 80% 80% 100% 100%, to give the penguin a slightly rounded body. -->
+
+.penguin-body {
+  width: 53%;
+  height: 45%;
+  background: linear-gradient(
+		45deg,
+		rgb(134, 133, 133) 0%,
+		rgb(234, 231, 231) 25%,
+		white 67%
+	);
+  border-radius: 80% 80% 100% 100%;
+}
+
+
+<!-- Step 34
+Target all descendent elements of the .penguin element, and give them a position of absolute. -->
+
+.penguin * {
+  position: absolute;
+}
+
+
+<!-- Step 35
+Position the .penguin-head element 10% from the top, and 25% from the left of its parent. -->
+
+.penguin-head {
+  width: 50%;
+	height: 45%;
+  background: linear-gradient(
+    45deg,
+		gray,
+		rgb(239, 240, 228)
+	);
+	border-radius: 70% 70% 65% 65%;
+  top: 10%;
+  left: 25%;
+}
