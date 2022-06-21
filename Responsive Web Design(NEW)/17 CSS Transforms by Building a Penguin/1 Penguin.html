@@ -161,3 +161,79 @@ To prevent the mountain from pushing the .ground element, adjust its position to
   background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
   position: absolute;
 }
+
+
+<!-- Step 16
+To make the mountain look more like a mountain, you can use the skew transform function, which takes two arguments. 
+The first being an angle to shear the x-axis by, and the second being an angle to shear the y-axis by.
+
+Use the transform property to skew the mountain by 0deg in the x-axis and 44deg in the y-axis. -->
+
+.left-mountain {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
+  position: absolute;
+  transform: skew(0deg, 44deg);
+}
+
+
+<!-- Step 17
+Set the stack level of the mountain element such that it remains directly behind the .ground element. -->
+
+.left-mountain {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
+  position: absolute;
+  transform: skew(0deg, 44deg);
+  z-index: 2;
+}
+
+
+<!-- Step 18
+To overlap the mountain and .ground elements better, give the mountain a margin-top of 100px, and the .ground element a margin-top of -58px. -->
+
+.left-mountain {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
+  position: absolute;
+  transform: skew(0deg, 44deg);
+  z-index: 2;
+  margin-top: 100px;
+}
+
+.ground {
+  width: 100vw;
+  height: 400px;
+  background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
+  z-index: 3;
+  position: absolute;
+  margin-top: -58px;
+}
+
+
+<!-- Step 19
+To give the effect of a mountain range, add another mountain, by creating a new div immediately after .left-mountain, 
+and give the new div the class of back-mountain. -->
+
+  <body>
+    <div class="left-mountain"></div>
+    <div class="back-mountain"></div>
+    <div class="penguin"></div>
+    <div class="ground"></div>
+  </body>
+
+
+<!-- Step 20
+Target the .back-mountain element, and set its width and height to 300px. 
+Then, set the background to a linear gradient starting at rgb(203, 241, 228) and ending at rgb(47, 170, 255). -->
+
+.back-mountain {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
+}
+
+
