@@ -1,2 +1,83 @@
 <!-- Step 81
 Position the .foot elements 85% from the top of their parent, and give all corners a radius of 50%. -->
+
+.foot {
+  width:  15%;
+  height: 30%;
+  background-color: orange;
+  top: 85%;
+  border-radius: 50%;
+}
+
+
+<!-- Step 82
+The penguin's beak and feet share the same color.
+
+Create a new custom CSS variable named --penguin-picorna, and replace all relavant property values with it. -->
+
+:root {
+  --penguin-face: white;
+  --penguin-picorna: orange;
+}
+
+.beak {
+  height: 10%;
+  background-color: var(--penguin-picorna);
+  border-radius: 50%;
+}
+
+.foot {
+  width:  15%;
+  height: 30%;
+  background-color: var(--penguin-picorna);
+  top: 85%;
+  border-radius: 50%;
+}
+
+
+<!-- Step 83
+Target the .foot element with a class of left, and position it 25% left of its parent. 
+Then, target the .foot element with a class of right, and position it 25% right of its parent. -->
+
+.foot {
+  width:  15%;
+  height: 30%;
+  background-color: var(--penguin-picorna);
+  top: 85%;
+  border-radius: 50%;
+}
+
+.foot.left {
+  left: 25%;
+}
+
+.foot.right {
+  right: 25%;
+}
+
+
+<!-- Step 84
+To make the penguin's feet look more penguiny, rotate the left foot by 80deg, and the right by -80deg. -->
+
+.foot.left {
+  left: 25%;
+  transform : rotate(80deg);
+}
+
+.foot.right {
+  right: 25%;
+  transform : rotate(-80deg);
+}
+
+
+<!-- Step 85
+Change the stacking order of the .foot elements such that they appear beneath the .penguin-body element. -->
+
+.foot {
+  width:  15%;
+  height: 30%;
+  background-color: var(--penguin-picorna);
+  top: 85%;
+  border-radius: 50%;
+  z-index: -1;
+}
