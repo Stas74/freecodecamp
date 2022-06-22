@@ -174,3 +174,68 @@ Where relevant, replace property values with your --penguin-face variable. -->
   border-radius: 70% 70% 100% 100%;
 }
 
+
+<!-- Step 56
+Below the .chin element, add two div elements each with a class of eye. 
+Also, give the first .eye element a class of left, and the second .eye element a class of right. -->
+
+      <div class="penguin-head">
+        <div class="face left"></div>
+        <div class="face right"></div>
+        <div class="chin"></div>
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+      </div>
+
+
+<!-- Step 57
+Target the .eye elements, and give them a width of 15%, height of 17%, and background-color of black. -->
+
+.eye {
+  width: 15%;
+  height: 17%;
+  background-color: black;
+}
+
+
+<!-- Step 58
+Position the .eye elements 45% from the top of their parent, and give all corners a radius of 50%. -->
+
+.eye {
+  width: 15%;
+  height: 17%;
+  background-color: black;
+  top: 45%;
+  border-radius: 50%;
+}
+
+
+<!-- Step 59
+Target the .eye element with the left class, and position it 25% from the left of its parent. 
+Then, target the .eye element with the right class, and position it 25% from the right of its parent. -->
+
+.eye.left {
+  left: 25%;
+}
+
+.eye.right {
+  right: 25%;
+}
+
+
+<!-- Step 60
+Within each .eye element, add a div with a class of eye-lid. -->
+
+      <div class="penguin-head">
+        <div class="face left"></div>
+        <div class="face right"></div>
+        <div class="chin"></div>
+        <div class="eye left">
+          <div class="eye-lid"></div>
+        </div>
+        <div class="eye right">
+          <div class="eye-lid"></div>          
+        </div>
+      </div>
+
+
