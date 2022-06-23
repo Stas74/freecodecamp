@@ -194,3 +194,79 @@ In the 0% selector of your @keyframes cabins, set the background-color to yellow
 }
 
 
+<!-- Step 26
+Between the 0% and 100% selectors, add a 50% selector. This will apply in the middle of the animation cycle. Set the background-color to purple. -->
+
+@keyframes cabins {
+  0% {
+    transform: rotate(0deg);
+    background-color: yellow;
+  }
+  50% {
+    background-color: purple;
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+
+<!-- Step 27
+Because the animation is on an infinite loop and the start and end colors are not the same, the transition appears jerky when it switches back to yellow from red.
+
+To start fixing this, remove the background-color from your 0% selector. -->
+
+@keyframes cabins {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    background-color: purple;
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+
+<!-- Step 28
+Create a new 25% selector between your 0% and 50% selectors. Give this new selector the background-color property set to yellow. -->
+
+@keyframes cabins {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: purple;
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+
+<!-- Step 29
+Finally, create a new 75% selector between your 50% and 100% selectors. Give this new selector a background-color property set to yellow.
+
+With that, your animation is much smoother and your Ferris wheel is complete. -->
+
+@keyframes cabins {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: purple;
+  }
+  75% {
+    background-color: yellow;
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
